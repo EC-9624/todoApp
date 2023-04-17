@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('listitems', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->intiger('is_complete');
+            $table->integer('is_complete');
             $table->timestamps();
         });
     }

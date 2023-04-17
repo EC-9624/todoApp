@@ -15,15 +15,15 @@
         
         </style>
     </head>
-    <body class="antialiased">
-        <div class="flex-col items-center text-center mb-3">
-            <h1 class="text-3xl mb-3">TodoList</h1>
+    <body class="antialiased flex items-center justify-center h-screen ">
+        <div class="flex flex-col items-center  mb-3 bg-slate-500 p-9 h-2/4 w-1/5 border-2 border-blue-300 rounded-lg">
+            <h1 class="text-4xl mb-3 font-bold">Todo List</h1>
             <form action="post" action="{{route('saveItem')}}" accept-charset="UTF-8">
                 <div class="flex-row mb-3">
-                    <label for="listItem" class="">Add Todo Item</label>
+                    <label for="listItem" class="text-2xl font-semibold">Add Todo Item</label>
                     <input type="text" name="listItem" class="bg-slate-200 rounded ml-3 border border-blue-300">
                 </div>
-                <button type="submit" class=" text-black font-bold py-2 px-4 rounded border border-blue-300">Save Item</button>
+                <button type="submit" class=" text-blue-300 bg-gray-600 font-bold py-2 px-4 rounded border border-blue-300">Save Item</button>
             </form>
         </div>
     </body>
